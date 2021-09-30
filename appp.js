@@ -15,7 +15,13 @@ function checkNegatives() {
         }else if(Number(currentPrice.value) < 0 ){
             output.innerText="Current price can't be negative"
         }else{
-            return "Positive"
+            if (Number(currentPrice.value)==0){
+                currentPrice.placeholder = 0
+                return "Positive"
+            }else{
+                return "Positive"
+            }
+            
         }
     }
 }
