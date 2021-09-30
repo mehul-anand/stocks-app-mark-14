@@ -1,0 +1,33 @@
+:root{
+    --background-color:#1C2541;
+    --text-color:#F1DB4B;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.working{
+    margin: 1em;
+    font-size: 1.2rem;
+}
+
+.input-class{
+    background-color: transparent;
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+#check{
+    width: 10rem;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    height: 2.5rem;
+    border-radius: 1rem;
+} 
+
