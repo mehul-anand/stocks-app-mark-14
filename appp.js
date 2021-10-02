@@ -6,7 +6,10 @@ const output = document.querySelector("#output")
 
 function checkNegatives() {
     if (Number(initialPrice.value) == 0 || Number(numOfStock.value) == 0){
-        output.innerText="Please fill all the fields"
+        initialPrice.placeholder = 0
+        numOfStock.placeholder = 0
+        currentPrice.placeholder = 0
+        output.innerText="Please fill all the fields (non-zero)"
     }else{
         if(Number(initialPrice.value)<=0){
             output.innerText="Initial price should be positive and non-zero"
